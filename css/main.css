@@ -1,0 +1,457 @@
+body,
+html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    color: white;
+    background: #f5f5f5;
+}
+#background{
+    width: 100%;
+    height:100%;
+    background: linear-gradient(#c31432, #240b36);
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    background: none;
+    position: relative;
+    z-index: 1000;
+    font-size: 40px;
+    font-family: 'Raleway-semibold';
+    text-align: center;
+    
+    
+}
+
+
+
+#welcomeDiv {
+    position: absolute;
+    z-index: 999;
+    top: 25%;
+    font-size: 40px;
+    width: 100%;
+    font-family: 'Raleway-semibold';
+    height: auto;
+    text-align: center;
+  
+}
+
+
+#greeting {
+    width: 100%;
+
+
+}
+
+.nav {
+    width: 100%;
+    height: 53px;
+    background: #1e082d;
+    border-bottom: 2px solid #eb3957;
+    position: absolute;
+    top: 100%;
+
+
+}
+
+#greeting p {
+    margin-top: -50px;
+}
+
+
+#viewWorkButton {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 16pt;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 100001;
+    position: relative;
+    
+    
+    
+
+
+}
+
+
+#viewWorkButton:hover {
+    background: #eb3957;
+    
+}
+
+#viewWorkButton i {
+    font-size: 15px;
+    transition: transform .3s ease-out;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#viewWorkButton:hover i {
+    transform: rotateZ(89.999deg);
+
+}
+
+#main {
+    width: 100%;
+    height: auto;
+    background: #f5f5f5;
+    position: relative;
+    color: #240b36;
+    text-align: center;
+    top: 3%;
+    font-size: 30pt;
+    font-family: 'raleway-bold';
+
+}
+
+#main hr {
+    width: 150px;
+    color: #240b36;
+    margin-top: -50px;
+    height: 3px;
+    background-color: #240b36;
+}
+
+#about {
+    background: white;
+}
+
+.imgFrame {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    float: left;
+    margin: 20px;
+
+}
+
+#infoDiv {
+    font-size: 13pt;
+    display: table;
+    height: 300px;
+}
+
+#infoText {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#collection {
+    font-size: 0;
+
+}
+
+#collection > .projectCard {
+    display: inline-block;
+}
+
+.projectCard {
+    position: relative;
+    cursor: pointer;
+}
+
+.blinder {
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+    background: #f5f5f5;
+    width: 498.5px;
+    height: 286px;
+    top: 0px;
+    left: 0px;
+    transition: all 0.5s ease-in-out;
+    font-size: 13pt;
+    display: table;
+    text-align: center;
+
+}
+
+.text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.highlight {
+
+    color: #eb3957;
+    margin-top: -15px;
+}
+
+.blinder .button {
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 2px solid #eb3957;
+    width: 170px;
+    margin: 0 auto;
+    font-size: 13pt;
+    padding: 7px 0;
+}
+
+.projectCard:hover .blinder {
+    opacity: 1;
+}
+
+#myModal {
+    z-index: 1050;
+    font-size: 15pt;
+
+    
+    
+}
+.animateScale{
+     transform: scale(1)!important;
+}
+
+.row > .column {
+    padding: 0 8px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Modal Content */
+.modal-content-container {
+    position: relative;
+    background-color:#fefefe;
+    margin: 100px auto;
+    width: 45%;
+    max-width: 1200px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    overflow-x: hidden;
+    z-index: 100000;
+}
+
+.modal-overlay{
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index: 999;
+
+ 
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 1000000000000;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+.slide-left{
+    left:-1500px;
+    
+}
+.slide-right{
+    right:-1500px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #240b36;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+/*    background-color: rgba(235,57,87, 0.8);*/
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(235,57,87, 0.8);
+}
+
+
+/* Caption text */
+.caption-container {
+    text-align: left;
+    background-color: white;
+    padding: 2px 16px;
+    color: #240b36;
+    border-top: 2px solid black;
+}
+
+
+.subtext{
+    margin-top:-20px;
+    font-size: 13pt;
+	display: block;
+	font-weight: 300;
+	color: #c0c0c0;
+	font-family: 'Raleway-bold';
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	padding-bottom: 15px;
+
+
+}
+.detail{
+
+	font-size: 11pt;
+	line-height: 18pt;
+	margin-top: 15px;
+}
+.caption-container .button {
+	padding: 11px 30px;
+	font-size: 10pt;
+	transition: all .5s;
+	cursor: pointer;
+	background: #eb3957;
+	color: #fff;
+	font-weight: 600;
+	border: 0;
+	pointer-events: none;
+	visibility: visible;
+	position: relative;
+    text-decoration: none;
+    margin-top:30px;
+
+}
+
+
+.caption-container a {
+text-decoration: none;}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact{
+   
+	background:#950f26;
+	color: #fff;
+	padding-top: 175px;
+    position:relative;
+    
+    height:300px;
+    
+
+}
+
+#contact svg{
+    position: absolute;
+    top:0px;
+}
+#contact #contactDiv{
+    text-align: center;
+}
+#contact h1 {
+	color: white;
+	font-size: 40pt;
+	font-family: 'raleway-bold';
+    margin-top: -100px;
+}
+#contact hr{
+    width: 150px;
+    color: white;
+    margin-top: -30px;
+    height: 3px;
+    background-color:white;
+}
+#footer{
+    background:#240b36;
+    width:100%;
+    height:100px;
+    position: absolute;
+    top:400px;
+    display:table;
+    text-align: center;
+    border:none;
+    
+}
+
+.fa-chevron-circle-up{
+    color: #f5f5f5;
+    position: relative;
+    top:-8px;
+    cursor:pointer;
+}
+.fa-chevron-circle-up:hover{
+    color: white;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property='og:title' content='Personal Website'/>
+    <meta property='og:image' content='./images/personalweb.PNG'/>
+    <meta property='og:description' content='A showcase of my past and current projects'/>
+    <meta property='og:url' content='https://digitalmedia.ok.ubc.ca/eddydinh'/>
+    <title>Eddy Dinh | Fullstack developer &amp; Tech enthusiast</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+    <section id="home">
+       <div id="background">
+                <div id="welcomeDiv">
+                <div id="greeting">
+                    <h1>Eddy Dinh</h1>
+                    <p>Full stack developer &amp; Tech enthusiast</p>
+                </div>
+              
+             
+            </div>
+        <div id="particles-js">
+           
+               
+                <div id="viewWorkButton" onclick="TravelTo('main')">
+                    View my work
+                    <i class="fas fa-arrow-right arrow-right"></i>
+                </div>
+           
+               <div class="nav"></div>
+
+        </div>
+</div>
+    </section>
+    <section id="main">
+        <div id="about">
+            <h1>ABOUT</h1>
+            <hr>
+            <div class="imgFrame"><img src="images/myPicture.png" width="300px" height="300px" alt=""></div>
+            <div id="infoDiv">
+                <div id="infoText">I worked part-time as a Full-Stack Developer at The Centre for Culture and Technology in UBC-Okanagan and as Platform and Technology Intern at eDynamicLearning. With a serious interest in all kinds of technology, I always make the best out of any learning opportunities I got.
+                
+                </div>
+            </div>
+        </div>
+
+        <div id='projects'>
+            <h1>PROJECTS</h1>
+            <hr>
+            <div id="collection">
+                         
+                           
+                <div class="projectCard" onclick="modalInfoOf('ourloveboard'); openModal();currentSlide(1)" > <img src="images/ourloveboard0.png" width="498.5px" height="286px" alt="">
+                    <div class="blinder">
+                        <div class="text">
+                            <h1>Our Love Board</h1>
+                            <p class="highlight">React, Redux, Firebase, &amp; Chrome API</p>
+                            <br>
+                            <br>
+                            <div class="button">LEARN MORE</div>
+                        </div>
+                    </div>
+                </div>
+               
+                   <div class="projectCard" onclick="modalInfoOf('soundscape'); openModal();currentSlide(1)" > <img src="images/soundscape0.png" width="498.5px" height="286px" alt="">
+                    <div class="blinder">
+                        <div class="text">
+                            <h1>Soundscape</h1>
+                            <p class="highlight">REACT, Redux &amp; Node.js, PostgreSQL</p>
+                            <br>
+                            <br>
+                            <div class="button">LEARN MORE</div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="projectCard hover-shadow" onclick="modalInfoOf('wandrscape'); openModal();currentSlide(1)"><img src="images/wandrscape0.png" width="498.5px" height="286px" alt="">
+                    <div class="blinder">
+                        <div class="text">
+                            <h1>Wandrscape</h1>
+                            <p class="highlight">PHP, &amp; Jquery</p>
+                            <br>
+                            <br>
+                            <div class="button">LEARN MORE</div>
+                        </div>
+
+
+                    </div>
+                </div>
+                
+                <div class="projectCard" onclick="modalInfoOf('naramata'); openModal();currentSlide(1)" > <img src="images/naramata0.png" width="498.5px" height="286px" alt="">
+                    <div class="blinder">
+                        <div class="text">
+                            <h1>Naramata Photo Viewer</h1>
+                            <p class="highlight">CSS, Javascript, &amp; HTML Canvas</p>
+                            <br>
+                            <br>
+                            <div class="button">LEARN MORE</div>
+                        </div>
+                    </div>
+                </div>
+      
+                
+                
+              
+                
+                
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                      <span class="close cursor" onclick="closeModal()">&times;</span>
+                      <div onclick="closeModal()" class="modal-overlay"></div>
+                   
+                    <div class="modal-content-container">
+         
+                        <div class="mySlides modal-content " id="picture1">
+                            
+                            <img src="images/wandrscape0.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides modal-content" id="picture2" >
+                         
+                            <img src="" style="width:100%">
+                        </div>
+
+                        <div class="mySlides modal-content" id="picture3">
+                           
+                            <img src="" style="width:100%">
+                        </div>
+
+                        <div class="mySlides modal-content" id="picture4">
+
+                            <img src="" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev modal-content" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next modal-content" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container modal-content">
+                           
+                            <h1></h1>
+                            <p class="subtext"></p>
+                           <div class="detail"></div>
+                           <a href="" onmouseover="hoverWhite(event);" onmouseout="turnBackRed(event);" target="_blank"><div class="button"><i class="fas fa-external-link-alt"></i>  VIEW SITE</div></a>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
+    </svg>
+    <div id="contactDiv">
+        <h1>CONTACT</h1>
+    <hr>
+    <p>Send me an email: minhdinh25599@gmail.com</p>
+     <p>Phone: +1 (778) 300-9569 (mobile)</p>
+      <a style="color:white" href="https://www.linkedin.com/in/eddy-dinh-108a9b121/"  target="_blank">LinkedIn</a>
+      <a style="color:white" href="https://drive.google.com/file/d/1GuJY5s8A6TomSeeNyv5tLhJAXKoVZ_kK/view" target="_blank">Resume</a>
+      <a style="color:white" href="https://github.com/eddydinh"  target="_blank">Github</a>
+    </div>
+    <div id="footer">
+        <div><i onclick="TravelTo('home')" class="fas fa-chevron-circle-up"></i>
+        <p>EDDY DINH</p></div>
+        
+    </div>
+     
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
