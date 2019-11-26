@@ -56,8 +56,19 @@
             <hr>
             <div id="collection">
                          
-                           
-                <div class="projectCard" onclick="modalInfoOf('ourloveboard'); openModal();currentSlide(1)" > <img src="images/ourloveboard0.png" width="498.5px" height="286px" alt="">
+                                 <div class="projectCard" onclick="modalInfoOf('theGame'); openModal();currentSlide(1)" > <img src="images/theGame0.png" width="498.5px" height="286px" alt="">
+                    <div class="blinder">
+                        <div class="text">
+                            <h1>Welcome to the Game</h1>
+                            <p class="highlight">Java</p>
+                            <br>
+                            <br>
+                            <div class="button">LEARN MORE</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="projectCard" onclick="modalInfoOf('ourloveboard'); openModal();currentSlide(1)" > <img src="images/ourloveboard1.png" width="498.5px" height="286px" alt="">
                     <div class="blinder">
                         <div class="text">
                             <h1>Our Love Board</h1>
@@ -123,7 +134,9 @@
          
                         <div class="mySlides modal-content " id="picture1">
                             
-                            <img src="images/wandrscape0.png" style="width:100%">
+                            <img id ="firstPic" src="images/wandrscape0.png" style="width:100%">
+                            
+                            <iframe id="iframeVid" width="100%" height="351" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
 
                         <div class="mySlides modal-content" id="picture2" >
@@ -142,8 +155,8 @@
                         </div>
 
                         <!-- Next/previous controls -->
-                        <a class="prev modal-content" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next modal-content" onclick="plusSlides(1)">&#10095;</a>
+                        <a id ="prevArrow" class="prev modal-content" onclick="plusSlides(-1)">&#10094;</a>
+                        <a id ="forwardArrow" class="next modal-content" onclick="plusSlides(1)">&#10095;</a>
 
                         <!-- Caption text -->
                         <div class="caption-container modal-content">

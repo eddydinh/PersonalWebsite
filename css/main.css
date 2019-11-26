@@ -26,6 +26,10 @@ html {
     
 }
 
+#iframeVid{
+    display: none;
+}
+
 
 
 #welcomeDiv {
@@ -259,7 +263,9 @@ html {
     overflow-x: hidden;
     z-index: 100000;
 }
-
+.modal-content{
+    width: 100%;
+}
 .modal-overlay{
     position: fixed;
     width:100%;
